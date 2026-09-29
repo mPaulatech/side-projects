@@ -1,27 +1,30 @@
-# Previsão do Tempo
+# ☀️ Weather App
 
-App web que mostra o clima atual e a previsão de 5 dias para qualquer cidade.
+Uma aplicação web interativa de previsão do tempo desenvolvida para praticar consumo de APIs, manipulação do DOM e estilização dinâmica com JavaScript.
 
-**[Ver online](https://mpaulatech.github.io/weather-app/)**
+---
 
-![Print do app](https://github.com/user-attachments/assets/09b2430d-2208-49f9-bf0c-55631e181daa)
+## 🚀 Funcionalidades
 
-## Tecnologias
-HTML, CSS, JavaScript e API Open-Meteo
+- 🔍 **Busca por cidade:** Permite pesquisar a previsão do tempo em tempo real para qualquer localização.
+- 🌡️ **Informações meteorológicas:** Exibe temperatura atual, condições do clima, umidade e velocidade do vento.
+- 🎨 **Interface dinâmica:** Atualização visual automática de acordo com os dados retornados pela API.
 
-## Funcionalidades
-- Busca de cidades com sugestões em tempo real
-- Seleção de cidade quando há resultados com o mesmo nome
-- Clima atual (temperatura, sensação térmica, umidade e vento)
-- Previsão de 5 dias
-- Tratamento de erros
+---
 
-## Como rodar
-Baixe o projeto e abra o `index.html` no navegador.
+## 🛠️ Tecnologias Utilizadas
 
-## Melhorias feitas após revisão
-- Sugestões renderizadas com `textContent` em vez de `innerHTML`, evitando XSS
-- Seleção de cidade quando há resultados homônimos, em vez de assumir o primeiro
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-## Sobre o desenvolvimento
-Projeto desenvolvido com apoio do Cursor. Revisei e validei o código para entender cada parte.
+---
+
+## 📂 Estrutura do Projeto
+
+```text
+Weather/
+├── 📄 index.html      # Estrutura da página web
+├── 📄 style.css       # Estilização e layout responsivo
+├── 📄 script.js      # Lógica de consumo da API e manipulação do DOM
+└── 📄 README.md       # Documentação do projeto
