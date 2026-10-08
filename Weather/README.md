@@ -2,6 +2,8 @@
 
 Uma aplicação web interativa de previsão do tempo desenvolvida para praticar consumo de APIs, manipulação do DOM e estilização dinâmica com JavaScript.
 
+<img width="840" height="734" alt="Screenshot From 2026-10-08 18-31-26" src="https://github.com/user-attachments/assets/d604eae9-6fbd-4e1a-9715-14686af1cb10" />
+
 ---
 
 ## 🚀 Funcionalidades
