@@ -110,6 +110,7 @@ function iconSvg(name) {
 function setStatus(message, isError = false) {
   statusEl.textContent = message;
   statusEl.classList.toggle("error", isError);
+  statusEl.classList.toggle("is-loading", message.startsWith("Buscando") || message.startsWith("Carregando"));
 }
 
 async function searchCities(name) {
@@ -126,7 +127,7 @@ async function fetchWeather(latitude, longitude) {
   const params = new URLSearchParams({
     latitude,
     longitude,
-    current: "temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m",
+    current: "temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m,pressure_msl",
     daily: "weather_code,temperature_2m_max,temperature_2m_min",
     timezone: "auto",
     forecast_days: "5",
@@ -177,19 +178,26 @@ function renderCurrent(place, weather) {
   const current = weather.current;
   const info = weatherInfo(current.weather_code);
 
+  document.querySelector("#weather-date").textContent = new Intl.DateTimeFormat("pt-BR", {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+  }).format(new Date());
   document.querySelector("#city-name").textContent = place.name;
   document.querySelector("#country-name").textContent = placeLabel(place);
   document.querySelector("#temperature").textContent = `${Math.round(current.temperature_2m)}°C`;
   document.querySelector("#condition").textContent = info.label;
-  document.querySelector("#feels-like").textContent = `Sensação térmica ${Math.round(current.apparent_temperature)}°C`;
+  document.querySelector("#feels-like").textContent = `${Math.round(current.apparent_temperature)}°`;
   document.querySelector("#humidity").textContent = `${current.relative_humidity_2m}%`;
   document.querySelector("#wind").textContent = `${Math.round(current.wind_speed_10m)} km/h`;
+  document.querySelector("#pressure").textContent = `${Math.round(current.pressure_msl)} hPa`;
   document.querySelector("#current-icon").innerHTML = iconSvg(info.icon);
   currentEl.hidden = false;
 }
 
 function renderForecast(weather) {
   const daily = weather.daily;
+  document.querySelector("#high-low").textContent = `Máxima ${Math.round(daily.temperature_2m_max[0])}° · Mínima ${Math.round(daily.temperature_2m_min[0])}°`;
   forecastGrid.innerHTML = daily.time
     .map((isoDate, index) => {
       const date = new Date(`${isoDate}T12:00:00`);
