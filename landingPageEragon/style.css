@@ -1,19 +1,115 @@
-.eb-garamond-font {
-  font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+:root{
+  --bluedragon: #8FCBE6;
 }
 
 *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    font-family: eb-garamond-font;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
 }
 
 body{
   background-color: #080F19;
-  color: #ffffff;
+  color: #FFFFFF;
+}
+
+#introduction{
+  display: flex;
+  padding: 150px;
+}
+
+.right div{
+  font-size: 16px;
+  color: var(--bluedragon);
+}
+
+.right h1{
+  font-size: 76px;
+  font-weight: 100;
+  margin: 22px 0px 24px;
+  color: #F0EEE6;
+}
+
+.right p{
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.left img{
+  width: 450px;
+  height: auto;
+  margin-left: 250px;
+}
+
+#books h2{
+  font-size: 64px;
+  font-weight: 200;
+  margin: 0px 0px 10px 150px;
+}
+
+#books p{
+  font-size: 22px;
+  margin: 0px 0px 10px 150px;
+}
+
+#books div{
+  display: flex;
+  justify-content: center;
+}
+
+#books img{
+  width: 350px;
+  height: auto;
+  margin: 25px;
+}
+
+#autor{
+  display: flex;
+  align-items: center;
+  padding: 150px;
+}
+
+#autor img{
+  margin-right: 100px;
+}
+
+#autor h2{
+  font-size: 64px;
+  font-weight: 200;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+#autor p{
+  font-size: 22px;
+}
+
+.detalhe{
+  font-size: 16px;
+  color: var(--bluedragon);
+}
+
+#otherbooks{
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 10px 150px;
+  gap: 20px;
+  padding-bottom: 25px;
+}
+
+#otherbooks h2{
+  font-size: 64px;
+  font-weight: 200;
+  margin-top: 20px;
+}
+
+#otherbooks h3{
+  font-size: 50px;
+  font-weight: 100;
+}
+
+#otherbooks div{
+  font-size: 20px;
+  color: var(--bluedragon);
 }
