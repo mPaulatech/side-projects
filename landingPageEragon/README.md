@@ -2,7 +2,7 @@
 
 Uma aplicação web interativa desenvolvida para praticar marcação semântica em HTML5, estilização dinâmica com CSS3 e estruturação visual temática baseada na saga literária *The Inheritance Cycle*.
 
-<img width="840" height="420" alt="Screenshot From 2026-11-03 22-43-36" src="./images/landingPageEragon.png" />
+<img width="840" height="420" alt="landingPageEragon" src="./images/landingPageEragon.jpg"
 
 ---
 
