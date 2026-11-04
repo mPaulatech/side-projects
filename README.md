@@ -1,28 +1,25 @@
-# 💡 Side Projects | mPaulatech
+# 🧪 Side Projects & Lab
 
-Bem-vindo(a) ao meu repositório de **Side Projects**! Este espaço é destinado ao desenvolvimento de projetos pessoais, práticas de conceitos de programação, consumo de APIs e experimentação de novas ferramentas.
+Bem-vindo(a) ao meu repositório de projetos paralelos! Este espaço serve como laboratório pessoal para experimentação de tecnologias, práticas de desenvolvimento web frontend, manipulação de APIs e construção de interfaces interativas.
 
 ---
 
 ## 🚀 Projetos no Repositório
 
-| Projeto | Descrição | Tecnologias | Status |
-| :--- | :--- | :--- | :---: |
-| ☀️ **[Weather](./Weather)** | Aplicação web para consulta de clima e previsão do tempo em tempo real com consumo de API. | `HTML` `CSS` `JavaScript` | 🟢 Concluído |
+### 🐉 01. Landing Page Eragon (`/landingPageEragon`)
+> *Landing page temática responsiva dedicada à série de livros Eragon (Ciclo da Herança) de Christopher Paolini, destacando as obras e autor.*
+- **Tech Stack:** `HTML5` • `CSS3`
+- **Destaques:** Design responsivo, galeria de capas e seção autoral.
+- 📂 [Acessar código](./landingPageEragon)
 
----
+### ☀️ 02. Weather App (`/Weather`)
+> *Aplicação web para verificação de previsão do tempo e condições meteorológicas em tempo real.*
+- **Tech Stack:** `JavaScript (ES6+)` • `Fetch API` • `HTML5` • `CSS3`
+- **Destaques:** Integração com API externa, consumo assíncrono e atualização dinâmica do DOM.
+- 📂 [Acessar código](./Weather)
 
-## 🛠️ Tecnologias Utilizadas
-
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-
----
-
-## 📂 Estrutura do Repositório
-
-```text
-side-projects/
-├── 📁 Weather/            # Projeto de previsão do tempo (HTML, CSS e JS)
+### 📋 03. To-Do List (`/to-do-list`)
+> *Aplicação clássica de lista de tarefas para organização e acompanhamento de rotina.*
+- **Tech Stack:** `JavaScript` • `HTML5` • `CSS3`
+- **Destaques:** Manipulação direta do DOM e interface limpa.
+- 📂 [Acessar código](./to-do-list)
